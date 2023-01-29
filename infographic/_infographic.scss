@@ -1,0 +1,68 @@
+.infographic-page {
+    .ingograph {
+        padding: 0 0 25px 0;
+        margin-top: 0;
+        background: unset;
+        .ingograph-content {
+            margin-top: 0;
+            .ingograph-card {
+                position: relative;
+                margin-bottom: 15px;
+                border-bottom-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    height: 100%;
+                    .news-image {
+                        height: 260px;
+                        width: 100%;
+                        border-radius: 8px;
+                        margin: 0;
+                        box-shadow: inset 0 -75px 50px -40px rgba(0, 0, 0, 0.8);
+                        background: {
+                            size: cover;
+                            position: center center;
+                            repeat: no-repeat;
+                        }
+                    }
+    
+                    .header-news-content {
+                        padding: 20px 25px;
+                        border-radius: 8px;
+                        min-height: 117px;
+                        width: 95%;
+                        margin: -50px auto 0 auto;
+                        background: #FFF;
+                        box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+                        background: {
+                            image: url(assets/images/bg.png);
+                            position: 85% 25%;
+                            repeat: no-repeat;
+                        }
+                        h2 {
+                            font-size: 1.2rem;
+                            color: #000;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                        }
+                        svg {
+                            fill: #cc2609;
+                            height: 16px;
+                            width: 16px;
+                            margin-left: 3px;
+                        }
+                        span {
+                            color: #adafca;
+                            margin-left: 5px;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
