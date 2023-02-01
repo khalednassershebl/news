@@ -32,9 +32,25 @@
 <div class="urgent">
     <div class="container p-0">
 
-        <div class="urgent-content">
+        <div class="swiper urgent-swiper urgent-content">
             <span class="urgent-title">عاجل</span>
-            <p class="urgent-news"> بعد مواجهة العراق والسعودية.. متى تتوقف المباراة مع الأمطار؟ </p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="post/post.html">
+                        <p class="urgent-news"> اعتراض سفينة محمّلة بالأسلحة المهربة من إيران إلى اليمن</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="post/post.html">
+                        <p class="urgent-news"> بعد مواجهة العراق والسعودية.. متى تتوقف المباراة مع الأمطار؟ </p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="post/post.html">
+                        <p class="urgent-news"> انتقاما لناغورنو كاراباخ.. أرمينيا تباغت روسيا بـ"المناورات" </p>
+                    </a>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -55,11 +71,13 @@
                     </div>
 
                     <div class="nav-logo-container">
-                        <img src="assets/images/logo.png" alt="logo">
-                        <div class="author">
-                            <span class="pretitle">رئيس التحرير :</span>
-                            <span>محمد عبدالجليل</span>
-                        </div>
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="logo">
+                            <div class="author">
+                                <span class="pretitle">رئيس التحرير :</span>
+                                <span>محمد عبدالجليل</span>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="upper-nav-actions">
@@ -76,12 +94,14 @@
                 </div>
 
                 <div class="nav-search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="البحث فى محتوي جريدة الطريق" />
-                        <div class="search-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="البحث فى محتوي جريدة الطريق" />
+                            <div class="search-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>
@@ -90,49 +110,129 @@
 
                 <nav class="nav">
                     <ul class="list-unstyled nav-links">
-                        <li class="nav-link"><a href="#">الرئيسية</a></li>
+                        <li class="nav-link"><a href="categories/categories.html">الرئيسية</a></li>
                         <li class="nav-link">
                             <a href="#">
                                 <span>الأخبار</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"/></svg>
                             </a>
+                            <div class="nav-link-dropdown">
+                                <ul class="list-unstyled p-0">
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">اخبار لينك فرعى 1</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">اخبار لينك فرعى 2</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">اخبار لينك فرعى 3</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">اخبار لينك فرعى 4</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="categories/categories.html">
                                 <span>رياضة</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"/></svg>
                             </a>
+                            <div class="nav-link-dropdown">
+                                <ul class="list-unstyled p-0">
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">رياضة لينك فرعى 1</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">رياضة لينك فرعى 2</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">رياضة لينك فرعى 3</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">رياضة لينك فرعى 4</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="nav-link"><a href="#">الأقتصاد</a></li>
-                        <li class="nav-link"><a href="#">الفن</a></li>
-                        <li class="nav-link"><a href="#">الحوادث</a></li>
+                        <li class="nav-link"><a href="categories/categories.html">الأقتصاد</a></li>
+                        <li class="nav-link"><a href="categories/categories.html">الفن</a></li>
+                        <li class="nav-link"><a href="categories/categories.html">الحوادث</a></li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="categories/categories.html">
                                 <span>التقارير</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"/></svg>
                             </a>
+                            <div class="nav-link-dropdown">
+                                <ul class="list-unstyled p-0">
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">التقارير لينك فرعى 1</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">التقارير لينك فرعى 2</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">التقارير لينك فرعى 3</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">التقارير لينك فرعى 4</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="categories/categories.html">
                                 <span>عالم</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"/></svg>
                             </a>
+                            <div class="nav-link-dropdown">
+                                <ul class="list-unstyled p-0">
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">عالم لينك فرعى 1</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">عالم لينك فرعى 2</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">عالم لينك فرعى 3</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">عالم لينك فرعى 4</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="categories/categories.html">
                                 <span>منوعات</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z"/></svg>
                             </a>
+                            <div class="nav-link-dropdown">
+                                <ul class="list-unstyled p-0">
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">منوعات لينك فرعى 1</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">منوعات لينك فرعى 2</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">منوعات لينك فرعى 3</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a href="categories/categories.html">منوعات لينك فرعى 4</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="nav-link"><a href="#">دين وحياة</a></li>
-                        <li class="nav-link"><a href="#">مقالات</a></li>
+                        <li class="nav-link"><a href="categories/categories.html">دين وحياة</a></li>
+                        <li class="nav-link"><a href="categories/categories.html">مقالات</a></li>
                     </ul>
                 </nav>
 
                 <div class="nav-actions">
 
                     <ul class="list-unstyled">
-                        <li class="nav-icon">
+                        <li class="nav-icon toggle-theme">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <rect x="0" y="0" width="24" height="24"></rect>
@@ -148,8 +248,8 @@
                                 <svg hidden xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zm-2 2H9v2H7V5H4v4h16V5h-3v2h-2V5zm5 6H4v8h16v-8zM6 14h2v2H6v-2zm4 0h8v2h-8v-2z"/></svg>
                             </div>
                             <div class="nav-today-info">
-                                <span>الثلاثاء</span>
-                                <div class="nav-date">17 يناير 2023</div>
+                                <span>الأحد</span>
+                                <div class="nav-date">5 فبراير 2023</div>
                             </div>
                         </div>
                     </div>
@@ -167,11 +267,13 @@
 
         <div class="big-nav-header-title">
             <div class="nav-logo-container">
-                <img src="assets/images/logo.png" alt="logo">
-                <div class="author">
-                    <span class="pretitle">رئيس التحرير :</span>
-                    <span>محمد عبدالجليل</span>
-                </div>
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <div class="author">
+                        <span class="pretitle">رئيس التحرير :</span>
+                        <span>محمد عبدالجليل</span>
+                    </div>
+                </a>
             </div>
             <span class="close-big-nav">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
@@ -180,12 +282,14 @@
 
         <div class="big-nav-search">
             <div class="nav-search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="البحث فى محتوي جريدة الطريق" />
-                    <div class="search-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="البحث فى محتوي جريدة الطريق" />
+                        <div class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 
@@ -194,7 +298,7 @@
             <li class=""> <!-- li-active -->
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">الرئيسية</a>
+                        <a href="categories/categories.html">الرئيسية</a>
                     </div>
                 </div>
             </li>
@@ -203,7 +307,7 @@
 
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">الأخبار</a>
+                        <a href="categories/categories.html">الأخبار</a>
                     </div>
                     <div class="li-link-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg>
@@ -213,13 +317,6 @@
                 <div class="nav-link-popup big-nav-hiddin">
 
                     <div class="big-nav-header-title">
-                        <div class="nav-logo-container">
-                            <img src="assets/images/logo.png" alt="logo">
-                            <div class="author">
-                                <span class="pretitle">رئيس التحرير :</span>
-                                <span>محمد عبدالجليل</span>
-                            </div>
-                        </div>
                         <span class="close-link-popup">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/></svg>
                         </span>
@@ -230,7 +327,7 @@
                         <li class=""> <!-- li-active -->
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">الأخبار لينك فرعى 1</a>
+                                    <a href="categories/categories.html">الأخبار لينك فرعى 1</a>
                                 </div>
                             </div>
                         </li>
@@ -238,7 +335,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">الأخبار لينك فرعى 2</a>
+                                    <a href="categories/categories.html">الأخبار لينك فرعى 2</a>
                                 </div>
                             </div>
                         </li>
@@ -246,7 +343,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">الأخبار لينك فرعى 3</a>
+                                    <a href="categories/categories.html">الأخبار لينك فرعى 3</a>
                                 </div>
                             </div>
                         </li>
@@ -254,7 +351,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">الأخبار لينك فرعى 4</a>
+                                    <a href="categories/categories.html">الأخبار لينك فرعى 4</a>
                                 </div>
                             </div>
                         </li>
@@ -267,7 +364,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">رياضة</a>
+                        <a href="categories/categories.html">رياضة</a>
                     </div>
                     <div class="li-link-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg>
@@ -276,13 +373,6 @@
                 <div class="nav-link-popup big-nav-hiddin">
 
                     <div class="big-nav-header-title">
-                        <div class="nav-logo-container">
-                            <img src="assets/images/logo.png" alt="logo">
-                            <div class="author">
-                                <span class="pretitle">رئيس التحرير :</span>
-                                <span>محمد عبدالجليل</span>
-                            </div>
-                        </div>
                         <span class="close-link-popup">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/></svg>
                         </span>
@@ -293,7 +383,7 @@
                         <li class=""> <!-- li-active -->
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">رياضة لينك فرعى 1</a>
+                                    <a href="categories/categories.html">رياضة لينك فرعى 1</a>
                                 </div>
                             </div>
                         </li>
@@ -301,7 +391,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">رياضة لينك فرعى 2</a>
+                                    <a href="categories/categories.html">رياضة لينك فرعى 2</a>
                                 </div>
                             </div>
                         </li>
@@ -309,7 +399,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">رياضة لينك فرعى 3</a>
+                                    <a href="categories/categories.html">رياضة لينك فرعى 3</a>
                                 </div>
                             </div>
                         </li>
@@ -317,7 +407,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">رياضة لينك فرعى 4</a>
+                                    <a href="categories/categories.html">رياضة لينك فرعى 4</a>
                                 </div>
                             </div>
                         </li>
@@ -329,7 +419,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">الأقتصاد</a>
+                        <a href="categories/categories.html">الأقتصاد</a>
                     </div>
                 </div>
             </li>
@@ -337,7 +427,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">الفن</a>
+                        <a href="categories/categories.html">الفن</a>
                     </div>
                 </div>
             </li>
@@ -345,7 +435,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">الحوادث</a>
+                        <a href="categories/categories.html">الحوادث</a>
                     </div>
                 </div>
             </li>
@@ -353,7 +443,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">التقارير</a>
+                        <a href="categories/categories.html">التقارير</a>
                     </div>
                     <div class="li-link-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg>
@@ -362,13 +452,6 @@
                 <div class="nav-link-popup big-nav-hiddin">
 
                     <div class="big-nav-header-title">
-                        <div class="nav-logo-container">
-                            <img src="assets/images/logo.png" alt="logo">
-                            <div class="author">
-                                <span class="pretitle">رئيس التحرير :</span>
-                                <span>محمد عبدالجليل</span>
-                            </div>
-                        </div>
                         <span class="close-link-popup">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/></svg>
                         </span>
@@ -379,7 +462,7 @@
                         <li class=""> <!-- li-active -->
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">التقارير لينك فرعى 1</a>
+                                    <a href="categories/categories.html">التقارير لينك فرعى 1</a>
                                 </div>
                             </div>
                         </li>
@@ -387,7 +470,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">التقارير لينك فرعى 2</a>
+                                    <a href="categories/categories.html">التقارير لينك فرعى 2</a>
                                 </div>
                             </div>
                         </li>
@@ -395,7 +478,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">التقارير لينك فرعى 3</a>
+                                    <a href="categories/categories.html">التقارير لينك فرعى 3</a>
                                 </div>
                             </div>
                         </li>
@@ -403,7 +486,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">التقارير لينك فرعى 4</a>
+                                    <a href="categories/categories.html">التقارير لينك فرعى 4</a>
                                 </div>
                             </div>
                         </li>
@@ -415,7 +498,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">عالم</a>
+                        <a href="categories/categories.html">عالم</a>
                     </div>
                     <div class="li-link-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg>
@@ -424,13 +507,6 @@
                 <div class="nav-link-popup big-nav-hiddin">
 
                     <div class="big-nav-header-title">
-                        <div class="nav-logo-container">
-                            <img src="assets/images/logo.png" alt="logo">
-                            <div class="author">
-                                <span class="pretitle">رئيس التحرير :</span>
-                                <span>محمد عبدالجليل</span>
-                            </div>
-                        </div>
                         <span class="close-link-popup">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/></svg>
                         </span>
@@ -441,7 +517,7 @@
                         <li class=""> <!-- li-active -->
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">عالم لينك فرعى 1</a>
+                                    <a href="categories/categories.html">عالم لينك فرعى 1</a>
                                 </div>
                             </div>
                         </li>
@@ -449,7 +525,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">عالم لينك فرعى 2</a>
+                                    <a href="categories/categories.html">عالم لينك فرعى 2</a>
                                 </div>
                             </div>
                         </li>
@@ -457,7 +533,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">عالم لينك فرعى 3</a>
+                                    <a href="categories/categories.html">عالم لينك فرعى 3</a>
                                 </div>
                             </div>
                         </li>
@@ -465,7 +541,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">عالم لينك فرعى 4</a>
+                                    <a href="categories/categories.html">عالم لينك فرعى 4</a>
                                 </div>
                             </div>
                         </li>
@@ -477,7 +553,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">منوعات</a>
+                        <a href="categories/categories.html">منوعات</a>
                     </div>
                     <div class="li-link-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg>
@@ -486,13 +562,6 @@
                 <div class="nav-link-popup big-nav-hiddin">
 
                     <div class="big-nav-header-title">
-                        <div class="nav-logo-container">
-                            <img src="assets/images/logo.png" alt="logo">
-                            <div class="author">
-                                <span class="pretitle">رئيس التحرير :</span>
-                                <span>محمد عبدالجليل</span>
-                            </div>
-                        </div>
                         <span class="close-link-popup">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/></svg>
                         </span>
@@ -503,7 +572,7 @@
                         <li class=""> <!-- li-active -->
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">منوعات لينك فرعى 1</a>
+                                    <a href="categories/categories.html">منوعات لينك فرعى 1</a>
                                 </div>
                             </div>
                         </li>
@@ -511,7 +580,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">منوعات لينك فرعى 2</a>
+                                    <a href="categories/categories.html">منوعات لينك فرعى 2</a>
                                 </div>
                             </div>
                         </li>
@@ -519,7 +588,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">منوعات لينك فرعى 3</a>
+                                    <a href="categories/categories.html">منوعات لينك فرعى 3</a>
                                 </div>
                             </div>
                         </li>
@@ -527,7 +596,7 @@
                         <li>
                             <div class="li-link">
                                 <div class="link-info">
-                                    <a href="#">منوعات لينك فرعى 4</a>
+                                    <a href="categories/categories.html">منوعات لينك فرعى 4</a>
                                 </div>
                             </div>
                         </li>
@@ -539,7 +608,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">دين وحياة</a>
+                        <a href="categories/categories.html">دين وحياة</a>
                     </div>
                 </div>
             </li>
@@ -547,7 +616,7 @@
             <li>
                 <div class="li-link">
                     <div class="link-info">
-                        <a href="#">مقالات</a>
+                        <a href="categories/categories.html">مقالات</a>
                     </div>
                 </div>
             </li>
@@ -557,7 +626,6 @@
     </div>
 </nav>
 
-<!-- ---- Shadow Overlay ---- -->
 <div class="close-overlay"></div>
 
 <!-- ---- [ End Header ] ---- -->
@@ -2500,10 +2568,9 @@
 <script src="assets/js/libs/jquery-3.6.3.min.js"></script>
 <script src="assets/js/libs/bootstrap.min.js"></script>
 <script src="assets/js/libs/popper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
 <!-- Addition Scripts -->
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>

@@ -5,10 +5,13 @@
         background: #FFF;
         border-radius: 8px;
         box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+        @media (max-width: $max-9) {
+            margin-bottom: 12px;
+        }
         a {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: start;
             text-decoration: none;
             .news-image {
                 figure {

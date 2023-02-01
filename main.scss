@@ -51,7 +51,7 @@ body {
     overflow-x: hidden;
 }
 .row {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .container-fluid {
     padding-right: 50px;
@@ -85,7 +85,9 @@ body {
 .col-lg-12,
 .col-md-6,
 .col-md-3,
-.col-md-4 {
+.col-md-4,
+.col-md-8,
+.col-md-9 {
     padding-right: 8px;
     padding-left: 8px;
 }
@@ -846,7 +848,7 @@ body {
                     a {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: start;
                         text-decoration: none;
                         .news-image {
                             figure {

@@ -1,5 +1,6 @@
 // Start Header
 .urgent {
+    overflow: hidden;
     background: #000;
     height: 50px;
     @media (max-width: $max-7) {
@@ -8,6 +9,16 @@
     .urgent-content {
         display: flex;
         align-items: center;
+        .swiper-wrapper {
+            height: 50px;
+            @media (max-width: $max-7) {
+                height: 40px;
+            }
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+            }
+        }
         .urgent-title {
             color: #000;
             font-size: 1.7rem;
@@ -25,6 +36,10 @@
                 font-size: 1.1rem;
                 padding: 0 10px;
             }
+        }
+        a {
+            text-decoration: none;
+            display: block;
         }
         p {
             font-size: 0.95rem;
@@ -103,23 +118,29 @@
                 }
             }
             .nav-logo-container {
-                img {
-                    height: 75px;
-                    @media (max-width: $max-5) {
-                        height: 55px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #000;
+                    img {
+                        height: 75px;
+                        @media (max-width: $max-5) {
+                            height: 55px;
+                        }
                     }
-                }
-                .author {
-                    font-size: 0.9rem;
-                    @media (max-width: $max-5) {
-                        font-size: .65rem;
-                    }
-                    .pretitle {
-                        font-weight: 600;
-                        color: #cc2609;
-                    }
-                    span {
-                        font-weight: 600;
+                    .author {
+                        font-size: 0.9rem;
+                        @media (max-width: $max-5) {
+                            font-size: .65rem;
+                        }
+                        .pretitle {
+                            font-weight: 600;
+                            color: #cc2609;
+                        }
+                        span {
+                            font-weight: 600;
+                            color: #000;
+                        }
                     }
                 }
             }
@@ -156,6 +177,9 @@
                 width: 100%;
                 margin: auto;
                 padding: 0;
+            }
+            form {
+                width: 100%;
             }
             .form-group {
                 width: 100%;
@@ -273,6 +297,7 @@
                 align-items: center;
                 padding-left: 15px;
                 li {
+                    cursor: pointer;
                     svg {
                         height: 26px;
                         width: 26px;
@@ -305,6 +330,14 @@
                 li.nav-link {
                     margin: 0 0;
                     padding: 0.5rem 0.9rem;
+                    position: relative;
+                    &:hover {
+                        .nav-link-dropdown {
+                            transform: translate(0, 0);
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
                     @media (max-width: $max-12) {
                         padding: 0.5rem 0.5rem;
                     }
@@ -325,6 +358,38 @@
                             width: 21px;
                             @media (max-width: $max-9) {
                                 display: none;
+                            }
+                        }
+                    }
+                    .nav-link-dropdown {
+                        position: absolute;
+                        top: 40px;
+                        right: 0;
+                        background: #FFF;
+                        z-index: 100;
+                        padding: 10px 10px 10px 25px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+                        transform: translate(0, -15px);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 0.3s ease-in-out;
+                        @media (max-width: $max-9) {
+                            display: none;
+                        }
+                        ul {
+                            li {
+                                transition: all 0.2s ease-in-out;
+                                &:hover {
+                                    transform: translate(-3px, 0);
+                                    a {
+                                        color: #cc2609;
+                                    }
+                                }
+                                a {
+                                    font-size: 0.8rem;
+                                    transition: all 0.2s ease-in-out;
+                                }
                             }
                         }
                     }
@@ -357,27 +422,32 @@
     .big-nav-header-title {
         display: flex;
         justify-content: space-between;
-        padding: 10px 20px 10px 20px;
+        padding: 15px 20px 15px 20px;
         border-bottom: 1px solid #e6e6e6;
         align-items: center;
         .nav-logo-container {
-            img {
-                height: 45px;
-                @media (max-width: $max-5) {
+            a {
+                text-decoration: none;
+                color: #000;
+                img {
                     height: 45px;
+                    @media (max-width: $max-5) {
+                        height: 45px;
+                    }
                 }
-            }
-            .author {
-                font-size: 0.55rem;
-                @media (max-width: $max-5) {
-                    font-size: .55rem;
-                }
-                .pretitle {
-                    font-weight: 600;
-                    color: #cc2609;
-                }
-                span {
-                    font-weight: 600;
+                .author {
+                    font-size: 0.55rem;
+                    @media (max-width: $max-5) {
+                        font-size: .55rem;
+                    }
+                    .pretitle {
+                        font-weight: 600;
+                        color: #cc2609;
+                    }
+                    span {
+                        font-weight: 600;
+                        color: #000;
+                    }
                 }
             }
         }
@@ -394,6 +464,9 @@
             width: 100%;
             padding: 10px 10px;
             display: flex;
+            form {
+                width: 100%;
+            }
             .form-group {
                 width: 100%;
                 position: relative;
@@ -601,6 +674,11 @@
     visibility: hidden;
 }
 .open-over {
+    opacity: 1;
+    visibility: visible;
+}
+.active-dropdown {
+    transform: translate(0, 0);
     opacity: 1;
     visibility: visible;
 }

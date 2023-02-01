@@ -7,21 +7,46 @@
         box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
         .post-info {
             padding: 25px 25px 25px 50px;
+            @media (max-width: $max-5) {
+                padding: 15px 20px 20px 20px;
+            }
             .post-cat {
                 color: #cc2609;
                 font-weight: 600;
                 font-size: 1.1rem;
+                @media (max-width: $max-9) {
+                    font-size: 1rem;
+                }
+                @media (max-width: $max-5) {
+                    font-size: 0.9rem;
+                }
             }
             .post-title {
                 font-size: 2.2rem;
+                @media (max-width: $max-9) {
+                    font-size: 1.6rem;
+                }
+                @media (max-width: $max-5) {
+                    font-size: 1.3rem;
+                }
             }
             .post-date {
                 display: flex;
                 align-items: center;
+                @media (max-width: $max-5) {
+                    flex-wrap: wrap;
+                }
                 p {
                     margin-left: 7px;
                     font-size: 0.9rem;
                     color: #adafca;
+                    @media (max-width: $max-9) {
+                        font-size: 0.8rem;
+                    }
+                    @media (max-width: $max-5) {
+                        font-size: 0.65rem;
+                        margin-left: 2px;
+                    }
                 }
             }
             .post-actions {
@@ -33,25 +58,42 @@
                     border-radius: 50px;
                     display: flex;
                     align-items: center;
+                    @media (max-width: $max-5) {
+                        padding: 3px 5px 3px 10px;
+                    }
                     img {
                         height: 25px;
                         width: 25px;
                         border-radius: 50%;
+                        @media (max-width: $max-5) {
+                            height: 20px;
+                            width: 20px;
+                        }
                     }
                     span {
                         font-weight: 600;
                         font-size: 0.8rem;
                         margin-right: 5px;
+                        white-space: nowrap;
+                        @media (max-width: $max-5) {
+                            font-size: 0.7rem;
+                        }
                     }
                 }
                 .post-social {
                     border-right: 1px solid #eaeaf5;
                     margin-right: 20px;
+                    @media (max-width: $max-5) {
+                        margin-right: 10px;
+                    }
                     .social-icons {
                         display: flex;
                         align-items: center;
                         margin-bottom: 0;
                         padding-right: 20px;
+                        @media (max-width: $max-5) {
+                            padding-right: 10px;
+                        }
                         .social-icon {
                             display: flex;
                             align-items: center;
@@ -60,6 +102,11 @@
                             margin-left: 15px;
                             height: 30px;
                             width: 30px;
+                            @media (max-width: $max-5) {
+                                margin-left: 10px;
+                                height: 27px;
+                                width: 27px;
+                            }
                             a {
                                 display: block;
                                 text-decoration: none;
@@ -68,6 +115,10 @@
                                     height: 18px;
                                     width: 18px;
                                     fill: #FFF;
+                                    @media (max-width: $max-5) {
+                                        height: 15px;
+                                        width: 15px;
+                                    }
                                 }
                             }
                         }
@@ -93,6 +144,12 @@
         .video-post {
             video {
                 min-height: 465px;
+                @media (max-width: $max-12) {
+                    min-height: 400px;
+                }
+                @media (max-width: $max-12) {
+                    min-height: auto;
+                }
             }
         }
         .post-image {
@@ -101,7 +158,10 @@
             img {
                 max-width: 100%;
                 border-radius: 8px;
-                min-height: 450px;
+                min-height: 530px;
+                @media (max-width: $max-5) {
+                    min-height: auto;
+                }
             }
             .image-source {
                 position: absolute;
@@ -127,10 +187,16 @@
                 max-width: 100%;
                 border-radius: 8px;
                 min-height: 450px;
+                @media (max-width: $max-5) {
+                    min-height: auto;
+                }
             }
         }
         .post-content-body {
             padding: 15px 35px;
+            @media (max-width: $max-5) {
+                padding: 15px 20px;
+            }
             a {
                 text-decoration: underline;
                 color: #cc2609;
@@ -141,8 +207,10 @@
                 margin-bottom: 0;
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
                 .post-tag {
                     margin-left: 15px;
+                    margin-bottom: 5px;
                     padding: 4px 15px;
                     border-top-left-radius: 4px;
                     border-bottom-left-radius: 4px;
@@ -158,6 +226,9 @@
                         color: #000;
                         font-size: 0.85rem;
                         font-weight: 600;
+                        @media (max-width: $max-5) {
+                            font-size: 0.75rem;
+                        }
                     }
                 }
             }
@@ -436,7 +507,7 @@
                     a {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: start;
                         text-decoration: none;
                         .news-image {
                             figure {
@@ -529,7 +600,7 @@
                     a {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: start;
                         text-decoration: none;
                         .news-image {
                             figure {

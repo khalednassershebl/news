@@ -33,3 +33,22 @@ $(".close-overlay").on("click", function () {
   $(".big-nav").addClass("big-nav-hiddin");
   $(".nav-link-popup").addClass("big-nav-hiddin");
 });
+
+// Toggle Theme
+$(".toggle-theme").on("click", function () {
+  $(this).toggleClass("dark-mode");
+});
+
+// Urgent Vertical Slider
+var swiper = new Swiper(".urgent-swiper", {
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+});
