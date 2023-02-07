@@ -423,6 +423,11 @@
                     margin: -50px auto 0 auto;
                     background: #FFF;
                     box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
                     background: {
                         image: url(assets/images/bg.png);
                         position: 85% 25%;

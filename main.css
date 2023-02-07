@@ -1870,7 +1870,7 @@ p.text a {
 .album-page .gallery a figure {
   height: 170px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 8px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1882,7 +1882,7 @@ p.text a {
   width: 100%;
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
-  border-radius: 12px;
+  border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1914,7 +1914,7 @@ p.text a {
   height: 100%;
   width: 100%;
   background-color: rgba(21, 21, 31, 0.8);
-  border-radius: 12px;
+  border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3367,6 +3367,20 @@ p.text a {
   background: #FFF;
   -webkit-box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
           box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url(assets/images/bg.png);
   background-position: 85% 25%;
   background-repeat: no-repeat;
@@ -3668,18 +3682,33 @@ p.text a {
   background: #FFF;
   -webkit-box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
           box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url(assets/images/bg.png);
-  background-position: 85% 25%;
+  background-position: 90% 25%;
   background-repeat: no-repeat;
 }
 
 .infographic-page .ingograph .ingograph-content .ingograph-card a .header-news-content h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #000;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  margin: 0;
 }
 
 .infographic-page .ingograph .ingograph-content .ingograph-card a .header-news-content svg {
@@ -4598,7 +4627,7 @@ body {
 .categories .categories-content .category-part .category-part-container .category-post-small a .news-content h2 {
   font-size: 0.9rem;
   color: #000;
-  margin-bottom: 2px;
+  margin-bottom: -2px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -4771,14 +4800,15 @@ body {
 .ingograph .ingograph-content .ingograph-card a .header-news-content {
   padding: 20px 25px;
   border-radius: 8px;
-  min-height: 117px;
+  min-height: 95px;
   width: 95%;
   margin: -50px auto 0 auto;
   background: #FFF;
   -webkit-box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
           box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  text-align: center;
   background-image: url(assets/images/bg.png);
-  background-position: 85% 25%;
+  background-position: 90% 25%;
   background-repeat: no-repeat;
 }
 
